@@ -18,6 +18,7 @@ window.addEventListener('load', () => {
     StartButton.addEventListener('click', startClock)
     ResetButton.addEventListener('click', resetClock)
 
+    //FUNCTIONS -----
     function startClock() {
         const time = [Number(hr_span.innerText), Number(min_span.innerText), Number(sec_span.innerText)]
 
@@ -53,4 +54,18 @@ window.addEventListener('load', () => {
 
     }
 
+    function resetClock() {
+        let res = confirm('Do you want to reset the STOPWATCH?')
+
+        if (res === true) {
+            if (intervalID != null) {
+                clearInterval(intervalID)
+                StartLabel.innerHTML = 'START'
+                intervalID = null
+            }
+            sec_span.innerHTML = '00'
+            min_span.innerHTML = '00'
+            hr_span.innerHTML = '00'
+        }
+    }
 })
