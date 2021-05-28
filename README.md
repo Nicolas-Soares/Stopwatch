@@ -22,4 +22,4 @@ Segue alguns prints de exemplos do funcionamento do app:
 
 ------
 
-![Cronometro pausado em 40 segundos](https://user-images.githubusercontent.com/71686515/120044695-b381a980-bfe4-11eb-9603-daa1db0e6e64.png)
+![Cronometro rodando em 18 segundos](https://user-images.githubusercontent.com/71686515/120044877-1e32e500-bfe5-11eb-83f3-76d480c16f16.png)
