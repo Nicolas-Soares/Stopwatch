@@ -2,7 +2,7 @@ body, html {
     width:100%;
     height:100%;
     background: rgb(0,0,0);
-background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,79,238,0.7718446601941747) 0%, rgba(34,146,186,1) 100%);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,79,238,0.7718446601941747) 0%, rgba(34,146,186,1) 100%);
     font: 20pt Arial normal;
     color: rgb(49, 48, 48);
     display: flex;

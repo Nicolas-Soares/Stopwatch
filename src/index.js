@@ -50,18 +50,24 @@ window.addEventListener('load', () => {
                     }
                 }
                 time[2] += 1
-                
-                sec_span.innerHTML = time[2]
-                min_span.innerHTML = time[1]
-                hr_span.innerHTML = time[0]
-                
-                // if (STR_sec_span.length === 3) {
 
-                // } else {
-                //     sec_span.innerHTML = STR_sec_span.substr(0, 1) + time[2]
-                //     min_span.innerHTML = STR_min_span.substr(0, 1) + time[1]
-                //     hr_span.innerHTML = STR_hr_span.substr(0, 1) + time[0]
-                // }
+                if (time[2].toString().length === 2) {
+                    sec_span.innerHTML = time[2]
+                } else {
+                    sec_span.innerHTML = '0' + time[2]
+                }
+
+                if (time[1].toString().length === 2) {
+                    min_span.innerHTML = time[1]
+                } else {
+                    min_span.innerHTML = '0' + time[1]
+                }
+
+                if (time[0].toString().length === 2) {
+                    hr_span.innerHTML = time[0]
+                } else {
+                    hr_span.innerHTML = '0' + time[0]
+                }
             }, 1000);
         }
     }
